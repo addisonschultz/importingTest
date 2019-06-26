@@ -57,11 +57,15 @@ workflows:
   import-build-publish:
     jobs:
       - import
-      - build
-        # requires:
+      - build:
+          requires:
+            - import
+          when: "always"
       - publish:
           requires:
+            - import
             - build
+          when: "always"
           filters:
             branches:
               only: master
