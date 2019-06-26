@@ -22,7 +22,7 @@ jobs:
           name: "Setup Git user.name"
           command: git config --global user.name addisonschultz
       - run: git add .
-      - run: git commit -m "someone added a new component! [skip ci]"
+      - run: git commit -m "someone added a new component! [skip ci]" --allow-empty
       - run:
           name: "Push components back to Github"
           command: git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/addisonschultz/importingTest.git master
