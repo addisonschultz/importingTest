@@ -8,12 +8,12 @@ jobs:
     docker:
       - image: circleci/node:10
 
-    working_directory: ~/repo/ComponentImporter
+    working_directory: ~/repo
 
     steps:
       - checkout
-      - run: yarn build
-      - run: yarn cli ../design-system/components ../design-system.framerfx/code
+      - run: yarn
+      - run: yarn build:components
 
   build:
     docker:
