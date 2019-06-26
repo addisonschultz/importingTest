@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+
+/design-system.framerfx/design/
+
+/design-system/tsconfig.json
