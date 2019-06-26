@@ -56,13 +56,13 @@ workflows:
   import-build-publish:
     jobs:
       - import
-      - build:
-          requires:
-            - import
+      - build
+        # requires:
+        #   - import
       - publish:
-          requires:
-            - import
-            - build
+          # requires:
+          #   - import
+          #   - build
           filters:
             branches:
               only: master
