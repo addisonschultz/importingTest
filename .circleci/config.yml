@@ -26,6 +26,7 @@ jobs:
       - run:
           name: "Push components back to Github"
           command: git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/addisonschultz/importingTest.git master
+          when: "always"
 
   build:
     docker:
