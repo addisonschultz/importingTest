@@ -2,4 +2,4 @@
 // example: export { Button, Props as ButtonProps } from "./components/Button"
 
 export { Example, Props as ExampleProps } from "./components/Example";
-export { Example2, Props as Example2Props } from "./components/Ex2";
+export { Example2, Props as Example2Props } from "./components/ex2";
