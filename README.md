@@ -1,4 +1,4 @@
-# Loupe Design System
+# Loupe Design Syste
 
 Welcome to [Loupe 2019](https://framer.com/loupe), a conference on interactive design and creative coding.
 
