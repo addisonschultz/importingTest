@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - checkout
-      - run: yarn
+      - run: yarn build
       - run: yarn cli ../design-system/components ../design-system.framerfx/code
 
   build:
