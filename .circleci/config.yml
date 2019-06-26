@@ -42,7 +42,9 @@ workflows:
   import-build-publish:
     jobs:
       - import
-      - build
+      - build:
+          requires:
+            - import
       - publish:
           requires:
             - import
