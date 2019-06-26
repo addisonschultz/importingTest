@@ -36,9 +36,15 @@ jobs:
 
     steps:
       - checkout
-      - run: git pull
-      - run: yarn
-      - run: npx framer-cli build design-system.framerfx
+      - run:
+          command: git pull
+          when: "always"
+      - run:
+          command: yarn
+          when: "always"
+      - run:
+          command: npx framer-cli build design-system.framerfx
+          when: "always"
 
   publish:
     docker:
@@ -48,9 +54,15 @@ jobs:
 
     steps:
       - checkout
-      - run: git pull
-      - run: yarn
-      - run: npx framer-cli publish design-system.framerfx --yes
+      - run:
+          command: git pull
+          when: "always"
+      - run:
+          command: yarn
+          when: "always"
+      - run:
+          command: npx framer-cli publish design-system.framerfx --yes
+          when: "always"
 
 workflows:
   version: 2
@@ -65,7 +77,6 @@ workflows:
           requires:
             - import
             - build
-          when: "always"
           filters:
             branches:
               only: master
