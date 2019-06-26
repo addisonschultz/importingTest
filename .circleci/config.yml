@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - checkout
-      - run: yarn
+      - run: yarn --cwd ComponentImporter build
       - run: yarn build:components
 
   build:
