@@ -57,12 +57,10 @@ workflows:
   import-build-publish:
     jobs:
       - import
-      - build:
-          requires:
-            - import
+      - build
+        # requires:
       - publish:
           requires:
-            - import
             - build
           filters:
             branches:
