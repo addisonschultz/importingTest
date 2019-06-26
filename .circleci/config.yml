@@ -16,13 +16,13 @@ jobs:
       - run: yarn --cwd ComponentImporter build
       - run: yarn build:components
       - run:
-          name: "Component Importer"
+          name: "Setup Git user.email"
           command: git config --global user.email addison@framer.com
       - run:
           name: "Setup Git user.name"
           command: git config --global user.name addisonschultz
       - run: git add .
-      - run: git commit -m "added a new component [skip ci]"
+      - run: git commit -m "someone added a new component! [skip ci]"
       - run:
           name: "Push components back to Github"
           command: git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/addisonschultz/importingTest.git master
