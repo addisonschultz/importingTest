@@ -8,7 +8,7 @@
     "framer"
   ],
   "scripts": {
-    "build:components": "cd ComponentImporter && yarn cli ../design-system/components ../design-system.framerfx/code"
+    "build:components": "cd ComponentImporter && npm run cli ../design-system/components ../design-system.framerfx/code"
   },
   "author": "Framer",
   "license": "MIT",
