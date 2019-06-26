@@ -12,6 +12,7 @@ jobs:
 
     steps:
       - checkout
+      - run: git clone https://${GITHUB_PERSONAL_TOKEN}@github.com/framer/ComponentImporter.git
       - run: yarn --cwd ComponentImporter build
       - run: yarn build:components
 
