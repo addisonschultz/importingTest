@@ -26,7 +26,6 @@ jobs:
       - run:
           name: "Push components back to Github"
           command: git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/addisonschultz/importingTest.git master
-          when: "always"
 
   build:
     docker:
@@ -38,13 +37,10 @@ jobs:
       - checkout
       - run:
           command: git pull
-          when: always
       - run:
           command: yarn
-          when: always
       - run:
           command: npx framer-cli build design-system.framerfx
-          when: always
 
   publish:
     docker:
@@ -56,13 +52,10 @@ jobs:
       - checkout
       - run:
           command: git pull
-          when: always
       - run:
           command: yarn
-          when: always
       - run:
           command: npx framer-cli publish design-system.framerfx --yes
-          when: always
 
 workflows:
   version: 2.1
