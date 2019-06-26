@@ -4,6 +4,17 @@
 #
 version: 2
 jobs:
+  import:
+    docker:
+      - image: circleci/node:10
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run: yarn
+      - run: npm run build:components
+
   build:
     docker:
       - image: circleci/node:10
@@ -13,7 +24,7 @@ jobs:
     steps:
       - checkout
       - run: yarn
-      - run: npx framer-cli build design-system.framerfx 
+      - run: npx framer-cli build design-system.framerfx
 
   publish:
     docker:
@@ -28,11 +39,13 @@ jobs:
 
 workflows:
   version: 2
-  test-and-publish:
+  import-build-publish:
     jobs:
+      - import
       - build
       - publish:
           requires:
+            - import
             - build
           filters:
             branches:

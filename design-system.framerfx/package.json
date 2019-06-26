@@ -1,22 +1,24 @@
 {
-  "main": "dist/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/react": "^16.4.16",
-    "framer": "^0.10"
-  },
-  "peerDependencies": {
-    "framer": "^0.10",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0"
-  },
-  "version": "1.0.0",
-  "dependencies": {
-    "@framer/addison.loupe-colors": "^1.0.0",
-    "styled-components": "^4.2.0"
-  },
-  "framer": {
-    "id": "03440e7c-b3ab-4728-9c85-24d9726faae8"
-  },
-  "author": "Loupe Team"
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.4.16",
+		"framer": "^0.10"
+	},
+	"peerDependencies": {
+		"framer": "^0.10",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"version": "1.0.0",
+	"dependencies": {
+		"@framer/addison.loupe-colors": "^1.0.0",
+		"styled-components": "^4.2.0"
+	},
+	"framer": {
+		"id": "03440e7c-b3ab-4728-9c85-24d9726faae8",
+		"displayName": "ComponentImportTest"
+	},
+	"author": "Loupe Team",
+	"name": "@framer/framer.componentimporttest"
 }

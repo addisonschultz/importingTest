@@ -7,6 +7,9 @@
     "design system",
     "framer"
   ],
+  "scripts": {
+    "build:components": "cd ComponentImporter && yarn cli ../design-system/components ../design-system.framerfx/code"
+  },
   "author": "Framer",
   "license": "MIT",
   "dependencies": {
