@@ -72,7 +72,6 @@ workflows:
       - build:
           requires:
             - import
-          when: always
       - publish:
           requires:
             - import
