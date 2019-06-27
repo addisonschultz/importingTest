@@ -15,3 +15,5 @@ node_modules
 .npmrc
 *.framerxproj
 .yarnrc
+
+!node_modules/@framer
