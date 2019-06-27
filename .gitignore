@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+**/node_modules/*
 
 /design-system.framerfx/design/
 
@@ -8,3 +8,5 @@ node_modules
 /design-system/tsconfig.json
 
 /ComponentImporter/
+
+!**/node_modules/@framer
