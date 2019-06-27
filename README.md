@@ -26,6 +26,7 @@ You'll be using Framer Web to collaborate with designers in real-time, but can a
 1. [Fork this repository](https://help.github.com/en/articles/fork-a-repo).
 1. [Clone the forked repository](https://help.github.com/en/articles/cloning-a-repository) locally.
 1. Run `yarn` to install dependencies.
+1. Open design-system.framerfx locally in Framer X
 1. When your component is made, stage and commit your changes, and then push them to github.
 1. [Make a pull request](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to merge back into the master branch.
 
