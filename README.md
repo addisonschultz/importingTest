@@ -21,20 +21,24 @@ We have a few pre-requisites you'll need in order to follow along.
 
 We'll be using [styled-components](https://www.styled-components.com/) to make designing and coding our components more streamlined. This also allows us to integrate more fully with Framer X, if we use variables from Framer inside of our code. This is already listed as a dependency, and will get installed when you first clone and run `yarn` in this project.
 
-You'll be using Framer Web to collaborate with designers in real-time, but can also open the design-system.framerfx file in Desktop Framer X to see the visual version of the component you're building.
+You'll be using Framer Web to collaborate with designers in real-time, but can also open the design-system.framerfx file in Desktop Framer X to see the visual version of the component you're building. This repository is going to be used to store our official Design System and includes a `.framerfx` file, but it's totally optional to use!
 
 1. [Fork this repository](https://help.github.com/en/articles/fork-a-repo).
 1. [Clone the forked repository](https://help.github.com/en/articles/cloning-a-repository) locally.
 1. Run `yarn` to install dependencies.
-1. Open design-system.framerfx locally in Framer X
-1. When your component is made, stage and commit your changes, and then push them to github.
+1. When your component is made, add the code to a **new** file under `design-system/components/MyComponent.tsx`, and add the need export under `design-system/index.tsx`
+1. Stage and commit your changes, and then push them to github.
 1. [Make a pull request](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to merge back into the master branch.
 
 Our repository is already configured to run framer-cli commands, which will allow us to publish our components automatically when we commit new changes!
 
-We have some already defined colors, fonts, and spacing values ready to be used, which you can use as varibles in your code. See the examples below on how to use the Loupe theme to stay true to the Loupe Design System.
+Finally, there is already an example component under `design-system/components/Example.tsx`, so if you get stuck or need some guidance, you can explore what the code looks like for some help!
 
 ---
+
+## Examples
+
+We have some already defined colors, fonts, and spacing values ready to be used, which you can use as varibles in your code. There are also some exmaples below on using state and props in Styled Components! See the examples below on how to use the Loupe theme and Styled Components to stay true to the Loupe Design System.
 
 #### Using Colors Example:
 
@@ -197,7 +201,7 @@ type Props = {
 }
 
 export function Element(props: Props) {
-    return <StyledElement />
+    return <StyledElement>{props.text}</StyledElement>
 }
 ```
 
