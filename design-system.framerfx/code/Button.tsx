@@ -2,14 +2,14 @@ import * as React from "react";
 import * as System from "../../design-system";
 import { ControlType, PropertyControls } from "framer";
 
-type Props = System.ExampleProps & {
+type Props = System.ButtonProps & {
   width: number;
   height: number;
 };
 
-export class Example extends React.Component<Props> {
+export class Button extends React.Component<Props> {
   render() {
-    return <System.Example {...this.props} />;
+    return <System.Button {...this.props} />;
   }
 
   static defaultProps: Props = {
