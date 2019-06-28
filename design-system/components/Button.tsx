@@ -10,7 +10,7 @@ export type Props = {
   kind?: "default" | "primary" | "secondary";
 };
 
-export const Example: React.FC<Props> = ({ text, kind }) => (
+export const Button: React.FC<Props> = ({ text, kind }) => (
   <MyExample className={`${kind ? kind : ""}`}>
     {text ? text : "Welcome to Loupe!"}
   </MyExample>
