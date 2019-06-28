@@ -5,7 +5,8 @@
   "main": "index.js",
   "keywords": [
     "design system",
-    "framer"
+    "framer",
+    "loupe"
   ],
   "scripts": {
     "build:components": "yarn --cwd ComponentImporter run cli ../design-system/components ../design-system.framerfx/code"
